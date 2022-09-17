@@ -1,0 +1,113 @@
+Topics:
+
+  Position:
+    positioning an element with the help of top, right, bottom, left properties
+
+    static/initial:
+      1. Goes witht the normal flow of the document
+      2. Occupies its own space in the document
+      3. Not affected by top, right, bottom, left values
+      4. Affected by scrolling
+    
+    Relative:
+      1. Goes witht the normal flow of the document
+      2. Occupies its own space in the document
+      3. Affected by top, right, bottom, left values with respect to its parent
+      4. Affected by scrolling
+
+    Absolute:
+      1. Removed from the normal flow of the document and made to appear float over normal flow
+         of the document
+      2. No Space is occupied in the page layout
+      3. when **no** top, right ... props are specified itstays in 0px top respective 
+         to the parent
+      4. Affected by top, right, bottom, left values with respective to initial 
+          containing block (html tag) ** if provided none of its parents has non 
+          static position value**
+        ** When some of its parents has non static position value then it moves with 
+        respective to the closest positioned parent **
+      5. Affected by scrolling
+    
+    Fixed:
+      1. Removed from the normal flow of the document and made to appear float over normal flow
+         of the document
+      2. No Space is occupied in the page layout
+      3. Affected by top, right, bottom, left values with respective to initial 
+          containing block (html tag)
+      4. Not Affected by scrolling
+
+    Sticky:
+      1. Goes witht the normal flow of the document
+      2. Occupies its own space in the document
+      3. Affected by top, right, bottom, left values with respective to initial 
+          containing block (html tag)
+      4. affected by top, left, ... values untill the values are reached else not 
+         affected by scroll
+
+  Flex-Box:
+    display: flex;
+      it takes over the control of the children (width & height)
+
+    direction -> row: children placed in single row
+      justify-content moves content horizontally
+        start
+        center
+        end
+        space-evenly
+        space-around
+        space-between
+      
+      align-items moves content vertically
+        start
+        center
+        end
+
+      flex-wrap: default value nowrap
+        wrap -> wrappes the children horizontally when a width reduces less than child width
+        nowrap -> shrinks the width of the children to accommodate inside parent
+    
+    direction -> column: children placed in single column
+      justify-content moves content vertically
+        start
+        center
+        end
+        space-evenly
+        space-around
+        space-between
+      
+      align-items moves content horizontally
+        start
+        center
+        end
+
+      flex-wrap:
+        wrap -> wrappes the children horizontally
+        nowrap -> shrinks the height of the children to accommodate inside parent
+
+  Pseudo classes/elements
+
+    hover ( pointing the cursor on ) --> change style on hover
+    visited --> click and hold
+    focus/focus-visible --> foucs on an element like input cursor focus
+    :before, :after --> used to create content before and after inner content
+                        works only for open and closing tag elements
+
+  Gradient
+  
+  Next Session:
+    GIT & Netlify ( Last 45 Mins )
+    GIT ---> is a tool used for **Source Control Management / version control** 
+
+      U --> untracked files
+      A --> Staged/Added to the memory
+      M --> Modified
+
+
+    SCM Provider: remote
+      Github, Bitbucket, Gitlab etc...
+
+      local --> latop storage having the files (uses git for versioning)
+
+      remote --> github, bitbucket, gitlab (uses git for versioning)
+
+    Netlify

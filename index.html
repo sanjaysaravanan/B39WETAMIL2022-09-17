@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .first-div {
+      background-color: yellow;
+      border: 2px solid;
+      height: 100px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .first-div:hover {
+      color: blue;
+      background-color: transparent;
+    }
+
+    .first-div:active {
+      color: red;
+      background-color: transparent;
+    }
+
+    a:visited {
+      color: maroon;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid;
+      font-style: italic;
+      width: 50px;
+      margin: 0px 16px;
+    }
+
+    input:focus {
+      border-bottom: 1px solid blue;
+    }
+
+    input:focus-visible {
+      outline: none;
+    }
+
+    .required {}
+
+    .required::before {
+      content: '*';
+      display: inline-block;
+      /* height: 20px;
+      width: 20px;
+      background-color: red; */
+      color: red;
+    }
+
+    .required::after {
+      content: '*';
+      display: inline-block;
+      /* height: 20px;
+      width: 20px;
+      background-color: red; */
+      color: red;
+    }
+
+    .last-div {
+      height: 100px;
+      width: 100px;
+      border: 2px dashed yellow;
+      background: linear-gradient(to right, red 50px, yellow, green, blue);
+    }
+
+    .radial-div {
+      height: 100px;
+      width: 100px;
+      border: 2px dashed yellow;
+      background: radial-gradient(red 50%, yellow, green, blue);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="first-div">
+    Content
+  </div>
+
+  <a href="https://www.espncricinfo.com/">Cricket News</a>
+  <br />
+  <label for="fname" class="required">First name</label>
+  <input type="text" id="fname" />
+  <br />
+  <label for="lname">Last name</label>
+  <input type="text" />
+  <input type="text" />
+  <input type="text" />
+
+  <div class="last-div">
+
+  </div>
+
+  <div class="radial-div">
+
+  </div>
+
+</body>
+
+</html>
