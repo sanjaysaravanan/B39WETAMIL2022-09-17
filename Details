@@ -12,7 +12,7 @@ Topics:
     Relative:
       1. Goes witht the normal flow of the document
       2. Occupies its own space in the document
-      3. Affected by top, right, bottom, left values with respect to its parent
+      3. Affected by top, right, bottom, left values with respect to its postion inside parent
       4. Affected by scrolling
 
     Absolute:
@@ -87,12 +87,13 @@ Topics:
   Pseudo classes/elements
 
     hover ( pointing the cursor on ) --> change style on hover
-    visited --> click and hold
+    active --> click and hold
+    visited --> visited link change its color
     focus/focus-visible --> foucs on an element like input cursor focus
     :before, :after --> used to create content before and after inner content
                         works only for open and closing tag elements
 
-  Gradient
+  Gradient -> mixing of colors in disired way 
   
   Next Session:
     GIT & Netlify ( Last 45 Mins )
